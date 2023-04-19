@@ -9,9 +9,9 @@
 
 import java.awt.*;
 
-public class Empty {
+public class Master {
 	
-	public Empty() {
+	public Master() {
 		
 	}
 	
