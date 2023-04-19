@@ -4,16 +4,39 @@
  */
 
 
+import java.awt.Image;
 import java.lang.Math;
 
-public abstract class StrepThroat {
+public class StrepThroat extends Pathogen{
 
-	private int posX;
-	private int posY = Math.random(10);
 	
-	public Pathogen(Image pathogen) {
+	public StrepThroat(int x, int y, Image strepThroat) {
+		super(x, y, strepThroat);
 		
 		
+	}
+
+	@Override
+	public void attack() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void targetPlayer(int speed) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setCurrentHelath() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getCurrentHealth() {
+		// TODO Auto-generated method stub
 		
 	}
 	

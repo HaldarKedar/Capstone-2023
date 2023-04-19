@@ -29,7 +29,10 @@ public abstract class Pathogen {
 	
 	public abstract void attack();
 	
-	public abstract void targetPlayer();
+	public abstract void targetPlayer(int speed);
 	
+	public abstract void setCurrentHelath();
+	
+	public abstract void getCurrentHealth();
 	
 }

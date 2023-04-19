@@ -5,16 +5,43 @@
 
 
 import java.lang.Math;
+import java.awt.*;
 
-public abstract class Malaria {
-
-	private int posX;
-	private int posY = Math.random(10);
+public class Malaria extends Pathogen {
 	
-	public Pathogen(Image pathogen) {
+	private int x = 500;
+	private int y = (int) (Math.random() * 1000);
+	private Image malaria;
+	
+	public Malaria(int x, int y, Image ecoli) {
+		super(x, y, ecoli);
 		
 		
+	}
+
+	@Override
+	public void attack() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void targetPlayer(int speed) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setCurrentHelath() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getCurrentHealth() {
+		// TODO Auto-generated method stub
 		
 	}
 	
 }
+ 
