@@ -23,7 +23,7 @@ public abstract class Pathogen {
 	}
 	
 	public void draw(Graphics g) {
-		
+		//Graphics 2d affine transformation wow
 	}
 	
 	
@@ -33,6 +33,6 @@ public abstract class Pathogen {
 	
 	public abstract void setCurrentHelath();
 	
-	public abstract void getCurrentHealth();
+	public abstract int getCurrentHealth();
 	
 }

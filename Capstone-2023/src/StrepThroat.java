@@ -7,8 +7,12 @@
 import java.awt.Image;
 import java.lang.Math;
 
-public class StrepThroat extends Pathogen{
+	
 
+public class StrepThroat extends Pathogen{
+	private int health = 100;
+	private int damage;
+	private int speed;
 	
 	public StrepThroat(int x, int y, Image strepThroat) {
 		super(x, y, strepThroat);

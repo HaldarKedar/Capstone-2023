@@ -8,16 +8,18 @@
 import java.awt.Image;
 import java.lang.Math;
 
-import Pathogen;
 
 public class Covid extends Pathogen {
 	
 	private int x;
 	private int y;
+	private int health = 100;
+	private int damage;
+	private int speed;
 	private Image pathogen;
 	
-	public Covid(int x, int y, Image ecoli) {
-		super(x, y, ecoli);
+	public Covid(int x, int y, Image covid) {
+		super(x, y, covid);
 		
 		
 	}
@@ -41,9 +43,11 @@ public class Covid extends Pathogen {
 	}
 
 	@Override
-	public void getCurrentHealth() {
-		// TODO Auto-generated method stub
+	public int getCurrentHealth() {
+		return health;
 		
 	}
+	
+
 	
 }
