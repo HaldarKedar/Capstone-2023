@@ -5,49 +5,56 @@
  */
 
 
+import java.awt.Graphics;
 import java.awt.Image;
 import java.lang.Math;
+
+import javax.swing.ImageIcon;
 
 
 public class Covid extends Pathogen {
 	
-	private int x;
-	private int y;
-	private int health = 100;
-	private int damage;
-	private int speed;
-	private Image pathogen;
+	private Image pic;
+	private CoordinateSystem coordinates;
 	
-	public Covid(int x, int y, Image covid) {
-		super(x, y, covid);
+	public Covid() {
+		
+		super();
+		this.coordinates = super.getCoordinates();
+		pic = (new ImageIcon("pathogen1.png")).getImage();
+		
+	}
+	
+	
+	public void draw(Graphics g) {
+		
 		
 		
 	}
-
-	@Override
-	public void attack() {
-		// TODO Auto-generated method stub
+	
+	
+	public void attack(int damage) {
+		
+		// Add code
 		
 	}
 
-	@Override
-	public void targetPlayer(int speed) {
-		// TODO Auto-generated method stub
+	
+	public void move(int speed) {
+		getCoordinates().shift(-speed,0);
+	}
+
+	
+	public void setCurrentHealth(int healthLoss) {
+		//health -= healthLoss;
 		
 	}
 
-	@Override
-	public void setCurrentHelath() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
+	
 	public int getCurrentHealth() {
-		return health;
+		//return health;
+		return 1;
 		
 	}
-	
-
 	
 }

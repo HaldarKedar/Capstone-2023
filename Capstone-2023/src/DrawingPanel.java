@@ -11,7 +11,7 @@ public class DrawingPanel extends JPanel {
 	
 
 	//Fields
-	//private BullsEye bullseye;
+	private Pathogen covidVirus;
 
 	// Constructors
 	
@@ -21,7 +21,7 @@ public class DrawingPanel extends JPanel {
 	// sets the background color to WHITE
 	public DrawingPanel() {
 		super();
-		//bullseye = new BullsEye();
+		covidVirus = new Covid();
 		setBackground(Color.WHITE);
 	}
 
@@ -31,11 +31,8 @@ public class DrawingPanel extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g); // Call JPanel's paintComponent method to paint the background
 
-		int width = getWidth();
-		int height = getHeight();
-
 		//  defer drawing the red cross to a RedCross object
-		//bullseye.draw(g,width, height);
+		covidVirus.draw(g);
 	}
 	
 	//
